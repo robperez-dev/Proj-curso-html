@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <style>
+    body {
+      font-family: "Lucida Console", "Courier New", monospace;
+      background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #04AA6D;
+    }
+
+    h1 {
+      background-color: black;
+      padding: 10px;
+      margin: 0;
+      color: #92a4ff;
+    }
+
+    div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 33vw;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .centrado {
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #FFF;
+      padding: 10px;
+      text-align: center;
+      clear: both;
+    }
+
+    .youtube {
+      padding: 20px;
+    }
+  </style>
+  <title>Glottis, el gato</title>
+</head>
+
+<body>
+  <header>
+    <h1>Glottis, el Gato</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preferencias.html">Preferencias</a></li>
+        <li><a class="active" href="audiovisuales.html">Audiovisuales</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="centrado">
+    <video class="centrado" autoplay muted src="/assets/videos/vid1.MP4"></video>
+  </div>
+  <div class="centrado">
+    <audio src="/assets/audios/audio1.mp3" autoplay controls muted></audio>
+  </div>
+  <Section class="centrado">
+    <div class="gallery">
+      <a href="/assets/img/Pic1.JPG" target="_blank"><img src="/assets/img/Pic1.JPG" alt="Glottis imagen 1"
+          width="600"></a>
+      <div class="desc">Glottis 1</div>
+    </div>
+    <div class="gallery">
+      <a href="/assets/img/Pic2.JPG" target="_blank"><img src="/assets/img/Pic2.JPG" alt="Glottis imagen 2"
+          width="600"></a>
+      <div class="desc">Glottis 2</div>
+    </div>
+    <div class="gallery">
+      <a href="/assets/img/Pic3.JPG" target="_blank"><img src="/assets/img/Pic3.JPG" alt="Glottis imagen 3"
+          width="600"></a>
+      <div class="desc"> Glottis 3</div>
+    </div>
+    <div class="gallery">
+      <a href="/assets/img/Pic2.JPG" target="_blank"><img src="/assets/img/Pic2.JPG" alt="Glottis imagen 3"
+          width="600"></a>
+      <div class="desc"> Glottis 4</div>
+    </div>
+    </div>
+  </Section>
+  <div class="centrado youtube">
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/e5fyjOft_nI"
+      title="TODO lo que tienes que saber acerca de los GATOS BLANCOS! 😽🐾" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+  <div class="desc">Video de Gatos</div>
+  </div>
+
+  <footer class="footer">Derechos reservados &copy; 2023</footer>
+</body>
+
+</html>
